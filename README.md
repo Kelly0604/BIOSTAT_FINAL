@@ -20,7 +20,7 @@ This dataset is primed for utilization in research aimed at crafting machine lea
 
 ##### Project Breakdown and Timeline
 
-**Phase 1: Data Exploration **
+**Phase 1: ** Data Exploration
   - Data exploratory analysis would be done on the dataset to see whether there are relationships between independent variables.
   - Visualizations will be generated to better understand the data
 
