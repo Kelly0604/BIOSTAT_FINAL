@@ -8,16 +8,18 @@ data = pd.read_csv("https://raw.githubusercontent.com/Kelly0604/BIOSTAT_FINAL/ma
 
 # Preprocessing the data
 def dataPreprocessing(input_df):
-  """Convert all categorical columns to numeric"""
+  """Convert all categorical columns to numeric."""
   cat_columns = input_df.select_dtypes(['object']).columns
   input_df[cat_columns] = input_df[cat_columns].apply(lambda x: pd.factorize(x)[0])
   return input_df
 
 df = dataPreprocessing(data)
 
+print(data.columns)
+
 # Exploratory Data Analysis
 def getDfSummary(input_data):
-    """Give a slightly more robust initial EDA compared to pd.decribe()"""
+    """Give a slightly more robust initial EDA."""
     output_data = input_data.describe()
     output_data = output_data.transpose()
 
@@ -37,7 +39,8 @@ def getDfSummary(input_data):
 getDfSummary(df)
 
 # Define the features
-discrete_fts = ['Sex','ChestPainType','FastingBS','RestingECG','ExerciseAngina','ST_Slope']
+discrete_fts = ['Sex','ChestPainType','FastingBS','RestingECG',
+                'ExerciseAngina','ST_Slope']
 cts_fts = ['Age','RestingBP','Cholesterol','MaxHR','Oldpeak']
 target = ['HeartDisease']
 
@@ -49,7 +52,8 @@ df_neg = data.loc[data.HeartDisease == 0].astype(object)
 fig, ax = plt.subplots(2, 4, figsize=(20, 12))
 for n, f in enumerate(discrete_fts):
     ax[int(np.floor(n / 4)), n % 4].hist([df_neg[f], df_pos[f]],
-                                    bins=max(len(np.unique(df_neg[f])), len(np.unique(df_pos[f]))),
+                                    bins=max(len(np.unique(df_neg[f])), 
+                                             len(np.unique(df_pos[f]))),
                                     label=['HeartDisease=0', 'HeartDisease=1'])
     ax[int(np.floor(n / 4)), n % 4].legend(loc='best')
     ax[int(np.floor(n / 4)), n % 4].set_title(f)
