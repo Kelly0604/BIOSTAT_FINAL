@@ -21,6 +21,18 @@ The Heart Disease Dataset amalgamates five distinct datasets into a unified data
 
 This dataset is primed for utilization in research aimed at crafting machine learning models capable of assessing heart disease risk. Given the prominence of cardiovascular diseases as a leading global mortality factor, these models hold significant potential for the early identification and intervention of cardiovascular diseases in high-risk individuals, thereby contributing to improved management and outcomes.
 
+##### Tool: Heart Disease Predictor
+
+**Class - IsHeartDisease**
+
+- Output whether the patient is likely to get a heart disease.
+  
+- Provide warning if the patient is considered likely diagnosing heart disease. 
+
+**Class - PercentageHeart**
+
+- Output percentage of diagnosing heart disease for the user to take in consideration even they are not considered likely by the algorithm. 
+
 ##### Project Breakdown and Timeline
 Phase 1: Data Exploration
   - Data exploratory analysis would be done on the dataset to see whether there are relationships between independent variables.
@@ -34,8 +46,7 @@ Phase 3: Training and Model Experiment
 - Train the data and split them into training, testing and validation set
 
 Phase 4: Evaluating Model 
-- The model will be evaluated based on their accuracy and AUC.
-- Refine the model to improve predictive accuracy using feedback loops and cross-validation techniques.
+- The model will be evaluated based on their accuracy and AUC. The best model will be used to develop our user interface function. 
   
 Phase 5: Develop user interface
 - Allow user to predict their own chance of being diagnosed of heart disease using our model.
