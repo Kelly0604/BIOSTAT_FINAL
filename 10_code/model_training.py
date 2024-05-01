@@ -15,7 +15,8 @@ X = data.drop(["HeartDisease"], axis=1)
 y = data["HeartDisease"]
 
 X_train, X_test, y_train, y_test = train_test_split(
-    X, y, test_size=0.20, random_state=42, stratify=y)
+    X, y, test_size=0.20, random_state=42, stratify=y
+)
 
 model = RandomForestClassifier(n_estimators=100)
 
@@ -27,4 +28,4 @@ accuracy = model.score(X_test, y_test)
 print(f"Model accuracy: {accuracy}")
 
 # Save the trained model
-joblib.dump(model, '20_outcomes/random_forest_model.pkl')
+joblib.dump(model, "20_outcomes/random_forest_model.pkl")
