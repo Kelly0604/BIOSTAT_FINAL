@@ -6,6 +6,6 @@ class IsHeartDisease:
     predictions = model.predict(patient)
     predicted_class = predictions[0]
     if predicted_class == 1:
-            return "The patient is diagnosed of heart disease."
+            return "The patient is likely diagnosed of heart disease."
         else:
-            return "The patient is not diagnosed of heart disease."
+            return "The patient is not likely diagnosed of heart disease."
