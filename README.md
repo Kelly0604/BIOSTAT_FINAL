@@ -23,7 +23,7 @@ This dataset is primed for utilization in research aimed at crafting machine lea
 
 **Class - IsHeartDisease**
 
-- Output whether the patient is likely to get a heart disease.
+- Output whether the patient is likely to get a heart disease. Positive when larger than 50%, negative when smaller than 50%. Percentage of possibility of diagnosing will also be returned. 
   
 - Provide warning if the patient is considered likely diagnosing heart disease.
 
