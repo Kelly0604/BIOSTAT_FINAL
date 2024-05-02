@@ -62,6 +62,6 @@ def test_model_not_trained_exception():
     classifier = HeartDiseaseClassifier()
     try:
         classifier.predict([0]*41)
-        raise AssertionError("Prediction should not succeed without a trained model")
+        raise AssertionError("Prediction should not pass without trained model")
     except Exception as e:
         assert "Model has not been trained yet" in str(e)
