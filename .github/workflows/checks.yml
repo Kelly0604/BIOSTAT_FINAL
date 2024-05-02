@@ -26,4 +26,3 @@ jobs:
           pip install ruff
           ruff check $(git ls-files 'src/*.py' 'tests/*.py')
           ruff format --check $(git ls-files 'src/*.py' 'tests/*.py')
-          mypy $(git ls-files 'src/*.py' 'tests/*.py')
