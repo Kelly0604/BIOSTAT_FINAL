@@ -4,3 +4,8 @@ class IsHeartDisease:
   def predict_heart(self, patient):
     model = joblib.load('20_outcomes/random_forest_model.pkl')
     predictions = model.predict(patient)
+    predicted_class = predictions[0]
+    if predicted_class == 1:
+            return "The patient is diagnosed of heart disease."
+        else:
+            return "The patient is not diagnosed of heart disease."
