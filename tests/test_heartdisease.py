@@ -1,6 +1,8 @@
+"""Tests for the heart_disease module."""
 import numpy as np
 import pandas as pd
 from heart_disease import HeartDiseaseClassifier
+
 
 def test_data_loading_and_preparation():
     """Test that data is loaded and prepared correctly."""
@@ -10,10 +12,11 @@ def test_data_loading_and_preparation():
 
     assert X_train.shape[0] > 0 and X_test.shape[0] > 0
     assert y_train.shape[0] > 0 and y_test.shape[0] > 0
-    assert X_train.shape[1] == X_test.shape[1], "Features count mismatch between training and testing sets"
+    assert X_train.shape[1] == X_test.shape[1], \
+        "Features count mismatch between training and testing sets"
 
 def test_model_training():
-    """Test that the model is trained without errors and that the classifier has a model after training."""
+    """Test the model is trained without errors and classifier has a model."""
     classifier = HeartDiseaseClassifier()
     data = '00_data/preprocessed_data.csv'
     classifier.train_model(data)
@@ -55,10 +58,10 @@ def test_prediction():
 
     
 def test_model_not_trained_exception():
-    """Test that the prediction method raises an exception if the model has not been trained."""
+    """Test that prediction raises an exception if the model is not trained."""
     classifier = HeartDiseaseClassifier()
     try:
         classifier.predict([0]*41)
-        assert False, "Prediction should not succeed without a trained model"
+        raise AssertionError("Prediction should not succeed without a trained model")
     except Exception as e:
         assert "Model has not been trained yet" in str(e)
