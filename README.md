@@ -29,6 +29,22 @@ This dataset is primed for utilization in research aimed at crafting machine lea
 
 #### User Guideline
 
+**Step 1: Clone Repository**
+
+Clone the repository using git clone _repo_url_. This will allow saving the processed data, model and heart disease predictor functions on local machine. 
+
+**Step 2: Input User Related Information**
+
+Input user specific information such as gender and age etc. in the Heart Disease Classifier. 
+
+**Step 3: Training and Predictions**
+
+Run Training and Predicting functions in heart_disease.py to predict results for the user. Results will contain whether the user is considered negative or positive as well as probability of diagnosing heart disease. 
+
+**Step 4: Tests**
+
+Contributor to the repository can add tests examples in test_heart_disease.py file for pytest to check testing results automatically. Contributors can also create pull request for creators to review. 
+
 #### Project Breakdown and Timeline
 Phase 1: Data Exploration
   - Data exploratory analysis would be done on the dataset to see whether there are relationships between independent variables.
