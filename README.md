@@ -2,16 +2,16 @@
 
 ## Authors: Kelly Tong, Katherine Tian, Cassie Kang
 
-##### Project Description
+#### Project Description
 
 The Heart Disease Predictor aims to develop a user-friendly tool that utilizes the UCI Heart Disease Dataset to forecast individual risk of cardiovascular diseases. These conditions remain a leading cause of global mortality, emphasizing the need for effective early detection strategies. By inputting personal health metrics, users can receive a personalized assessment of their heart disease risk, facilitating timely healthcare interventions.
 
 Our tool is built upon a database of 918 records from the Kaggle dataset, integrating crucial health indicators like age, sex, chest pain type, and more. We plan to employ machine learning technique to create a robust predictive model.
 
-##### Goals and Impact
+#### Goals and Impact
 The primary objective of this project is to provide individuals with an accessible, accurate predictor for heart disease, with their specific health data. This predictive capability aims to support targeted monitoring and proactive management of cardiovascular health, potentially reducing the incidence and severity of heart disease.
 
-##### Dataset Description
+#### Dataset Description
 
 The dataset is sourced from Kaggle and can be found at: https://www.kaggle.com/datasets/redwankarimsony/heart-disease-data/data
 
@@ -19,15 +19,18 @@ The Heart Disease Dataset amalgamates five distinct datasets into a unified data
 
 This dataset is primed for utilization in research aimed at crafting machine learning models capable of assessing heart disease risk. Given the prominence of cardiovascular diseases as a leading global mortality factor, these models hold significant potential for the early identification and intervention of cardiovascular diseases in high-risk individuals, thereby contributing to improved management and outcomes.
 
-##### Tool: Heart Disease Predictor
+#### Tool: Heart Disease Predictor
 
 **Class - HeartDiseaseClassifier**
 
 - Output whether the patient is likely to get a heart disease. Positive when larger than 50%, negative when smaller than 50%. Percentage of possibility of diagnosing will also be returned. 
   
-- Provide warning if the patient is considered likely diagnosing heart disease. 
+- Provide warning if the patient is considered likely diagnosing heart disease.
 
-##### Project Breakdown and Timeline
+#### User Guideline
+
+
+#### Project Breakdown and Timeline
 Phase 1: Data Exploration
   - Data exploratory analysis would be done on the dataset to see whether there are relationships between independent variables.
   - Visualizations will be generated to better understand the data
