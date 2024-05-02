@@ -21,15 +21,11 @@ This dataset is primed for utilization in research aimed at crafting machine lea
 
 ##### Tool: Heart Disease Predictor
 
-**Class - IsHeartDisease**
+**Class - HeartDiseaseClassifier**
 
-- Output whether the patient is likely to get a heart disease.
+- Output whether the patient is likely to get a heart disease. Positive when larger than 50%, negative when smaller than 50%. Percentage of possibility of diagnosing will also be returned. 
   
 - Provide warning if the patient is considered likely diagnosing heart disease. 
-
-**Class - PercentageHeart**
-
-- Output percentage of diagnosing heart disease for the user to take in consideration even they are not considered likely by the algorithm. 
 
 ##### Project Breakdown and Timeline
 Phase 1: Data Exploration
