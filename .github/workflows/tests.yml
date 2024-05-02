@@ -39,6 +39,3 @@ jobs:
             echo "Tests directory not found."
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Print report
-        run: cat test_report.txt
