@@ -52,7 +52,7 @@ if __name__ == "__main__":
     classifier.train_model(data_url)
 
     example_1 = [True,False,True,False,False,False,True,False,True,False,False,
-                 True,False,True,False,False,False,True,False,False,False,
+                 True,False,True,False,False,False,True,False,False,False, 
                  False,False,False,True,False,False,False,True,False,False,
                  False,False,False,True,False,False,True,False,False,False]
     result, probability = classifier.predict(example_1)
