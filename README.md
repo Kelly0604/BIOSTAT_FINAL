@@ -73,8 +73,21 @@ Input the user-specific information into the Heart Disease Classifier. All input
 - **Bin 4**: Oldpeak 4.44 to <6.2
 
 #### User Input Example:
-
+Follow these steps to input data and receive a prediction:
+1. Launch the interface:
+open the temrinal or command prompt, navigate to the directory where the heart disease predictor tool is installed.
+run:
+```Python
+python src/heart_disease.py
+```
+2. Prepare the Data:
+- Collect all required patient health metrics. Ensure each metric is categorized according to the bin definitions provided in the setup instructions. The model expects binary values for each feature.
+- Data should be formatted as a comma-separated list of binary values. Each value represents a specific health metric in the order defined by the model feature (there should be 41 features)
+- You will be asked to input the above data.
+3. Submit data for prediction:
+Once all the data has been input, hit enter. The tool will process the data and display the prediction results directly on the interface as in the below example.
 ![User Input](imgs/User_input.jpg)
+
 
 **Step 3: Training and Predictions**
 
@@ -99,7 +112,7 @@ Phase 3: Training and Model Experiment
 - Train the data and split them into training, testing and validation set
 
 Phase 4: Evaluating Model 
-- The model will be evaluated based on their accuracy and AUC. The best model will be used to develop our user interface function. 
+- The model will be evaluated based on their accuracy and AUC. The best model(Random Forest) is used to develop our user interface function. 
   
 Phase 5: Develop user interface
 - Allow user to predict their own chance of being diagnosed of heart disease using our model.
