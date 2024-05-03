@@ -73,7 +73,8 @@ Input the user-specific information into the Heart Disease Classifier. All input
 - **Bin 4**: Oldpeak 4.44 to <6.2
 
 #### User Input Example:
-https://github.com/Kelly0604/BIOSTAT_FINAL/blob/model/imgs/User_input.jpg  
+
+![User Input](imgs/User_input.jpg)
 
 **Step 3: Training and Predictions**
 
@@ -83,7 +84,7 @@ Run Training and Predicting functions in heart_disease.py to predict results for
 
 Contributor to the repository can add tests examples in test_heart_disease.py file for pytest to check testing results automatically. Contributors can also create pull request for creators to review.
 
-https://github.com/Kelly0604/BIOSTAT_FINAL/blob/model/imgs/Test.jpg
+![User Input](imgs/Test.jpg)
 
 #### Project Breakdown and Timeline
 Phase 1: Data Exploration
