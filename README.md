@@ -75,7 +75,8 @@ Input the user-specific information into the Heart Disease Classifier. All input
 #### User Input Example:
 Follow these steps to input data and receive a prediction:
 1. Launch the interface:
-open the temrinal or command prompt, navigate to the directory where the heart disease predictor tool is installed.
+
+Open the temrinal or command prompt, navigate to the directory where the heart disease predictor tool is installed.
 run:
 ```Python
 python src/heart_disease.py
@@ -85,6 +86,7 @@ python src/heart_disease.py
 - Data should be formatted as a comma-separated list of binary values. Each value represents a specific health metric in the order defined by the model feature (there should be 41 features)
 - You will be asked to input the above data.
 3. Submit data for prediction:
+
 Once all the data has been input, hit enter. The tool will process the data and display the prediction results directly on the interface as in the below example.
 ![User Input](imgs/User_input.jpg)
 
