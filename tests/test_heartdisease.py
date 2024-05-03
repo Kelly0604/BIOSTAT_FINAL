@@ -4,12 +4,9 @@
 import unittest
 from unittest.mock import patch
 
-
 import numpy as np
 import pandas as pd
 from heart_disease import HeartDiseaseClassifier
-
-
 
 
 class TestHeartDiseaseClassifier(unittest.TestCase):

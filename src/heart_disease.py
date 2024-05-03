@@ -4,13 +4,11 @@
 import warnings
 from typing import Any, Tuple, Union
 
-
 import numpy as np
 import pandas as pd
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
-
 
 # Ignore specific warning categories or all warnings
 warnings.filterwarnings("ignore")
