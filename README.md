@@ -29,6 +29,59 @@ This dataset is primed for utilization in research aimed at crafting machine lea
 
 #### User Guideline
 
+**Step 1: Clone Repository**
+
+Clone the repository using git clone _repo_url_. This will allow saving the processed data, model and heart disease predictor functions on local machine. 
+
+**Step 2: Input User-Specific Information**
+
+Input the user-specific information into the Heart Disease Classifier. All inputs should be categorized into binary or numeric bins as specified. For numeric variables, use the following bin definitions to classify each feature:
+
+#### Feature: Age
+- **Bin 0**: Age 28 to <38
+- **Bin 1**: Age 38 to <48
+- **Bin 2**: Age 48 to <58
+- **Bin 3**: Age 58 to <68
+- **Bin 4**: Age 68 and above
+
+#### Feature: Resting Blood Pressure (RestingBP)
+- **Bin 0**: BP < 40.0 mmHg
+- **Bin 1**: BP 40.0 to <80.0 mmHg
+- **Bin 2**: BP 80.0 to <120.0 mmHg
+- **Bin 3**: BP 120.0 to <160.0 mmHg
+- **Bin 4**: BP 160.0 to <200.0 mmHg
+
+#### Feature: Cholesterol
+- **Bin 0**: Cholesterol < 120.6 mg/dL
+- **Bin 1**: Cholesterol 120.6 to <241.2 mg/dL
+- **Bin 2**: Cholesterol 241.2 to <361.8 mg/dL
+- **Bin 3**: Cholesterol 361.8 to <482.4 mg/dL
+- **Bin 4**: Cholesterol 482.4 to <603.0 mg/dL
+
+#### Feature: Maximum Heart Rate (MaxHR)
+- **Bin 0**: MaxHR < 88.4 bpm
+- **Bin 1**: MaxHR 88.4 to <116.8 bpm
+- **Bin 2**: MaxHR 116.8 to <145.2 bpm
+- **Bin 3**: MaxHR 145.2 to <173.6 bpm
+- **Bin 4**: MaxHR 173.6 to <202.0 bpm
+
+#### Feature: Oldpeak
+- **Bin 0**: Oldpeak < -0.84
+- **Bin 1**: Oldpeak -0.84 to <0.92
+- **Bin 2**: Oldpeak 0.92 to <2.68
+- **Bin 3**: Oldpeak 2.68 to <4.44
+- **Bin 4**: Oldpeak 4.44 to <6.2
+
+#### User Input Example:
+
+
+**Step 3: Training and Predictions**
+
+Run Training and Predicting functions in heart_disease.py to predict results for the user. Results will contain whether the user is considered negative or positive as well as probability of diagnosing heart disease. 
+
+**Step 4: Tests**
+
+Contributor to the repository can add tests examples in test_heart_disease.py file for pytest to check testing results automatically. Contributors can also create pull request for creators to review.
 
 #### Project Breakdown and Timeline
 Phase 1: Data Exploration
